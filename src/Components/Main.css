@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mona-image {
+  flex: 0 0 500px;
+  /* text-align: center; */
+}
+.mona-image img {
+  border-radius: 50%;
+}
+.intro {
+  flex: 0 0 600px;
+  padding: 20px;
+  text-align: center;
+}

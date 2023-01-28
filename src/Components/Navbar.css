@@ -41,11 +41,40 @@
     justify-content: space-between;
     align-items: center;
   }
+  .nav-item {
+    position: relative;
+    transition: transform 0.2s;
+  }
 }
 /* ---------Media Queries---------- */
 
-@media (max-width: 408px) {
+@media (min-width: 500px) and (max-width: 1000px) {
   nav {
-    background-color: red;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow-x: auto;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  .nav-item a {
+    padding: 5px;
+    text-decoration: none;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
+
+/* @media (min-width: 150px) and (max-width: 500px) {
+  nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow-x: auto;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+} */

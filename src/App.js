@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
+import { arc } from "d3";
 // import Footer from "./Components/Footer";
 import Main from "./Components/Main";
 

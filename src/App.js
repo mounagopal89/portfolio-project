@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import { arc } from "d3";
 // import Footer from "./Components/Footer";
 import Main from "./Components/Main";
-
+// Adding comment
 // import Home from "./Routecomponents/Home";
 import About from "./Routecomponents/About";
 import Projects from "./Routecomponents/Projects";

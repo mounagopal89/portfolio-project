@@ -67,7 +67,7 @@
   }
 }
 
-/* @media (min-width: 150px) and (max-width: 500px) {
+@media (min-width: 150px) and (max-width: 500px) {
   nav {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -77,4 +77,4 @@
     list-style: none;
     display: flex;
   }
-} */
+}

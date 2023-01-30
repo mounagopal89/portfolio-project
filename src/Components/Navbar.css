@@ -52,7 +52,7 @@
   nav {
     margin-left: 2rem;
     margin-right: 2rem;
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
   .nav-links {
     list-style: none;
@@ -71,6 +71,14 @@
   nav {
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  body {
     overflow-x: hidden;
   }
   .nav-links {

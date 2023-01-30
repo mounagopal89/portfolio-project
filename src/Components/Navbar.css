@@ -71,7 +71,7 @@
   nav {
     margin-left: 2rem;
     margin-right: 2rem;
-    overflow-x: auto;
+    overflow-x: hidden;
   }
   .nav-links {
     list-style: none;

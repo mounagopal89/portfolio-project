@@ -1,4 +1,7 @@
 @media (min-width: 1000px) {
+  .bi-list {
+    visibility: hidden;
+  }
   nav {
     width: 100%;
     background-color: darkgreen;
@@ -48,7 +51,7 @@
 }
 /* ---------Media Queries---------- */
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (max-width: 1000px) {
   nav {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -65,26 +68,50 @@
   body {
     overflow-x: hidden;
   }
+  /* .bi-list {
+    visibility: hidden;
+  } */
 }
 
 @media (max-width: 500px) {
+  .nav-links {
+    display: none;
+  }
+  .bi-list {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  .bi-list:hover > .nav-links {
+    display: block;
+  }
+
   nav {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: darkgreen;
   }
-  /* .nav-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  } */
-  body {
-    overflow-x: hidden;
+  .nav-item:hover {
+    background-color: white;
+    cursor: pointer;
+    transform: scale(1.1);
   }
-  ul > .nav-item {
-    list-style: none;
-  }
-  .nav-item a {
-    text-decoration: none;
-  }
+}
+
+.nav-item:hover a {
+  color: darkgreen;
+}
+body {
+  overflow-x: hidden;
+}
+ul > .nav-item {
+  list-style: none;
+  padding-right: 10px;
+}
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.nav-item {
+  position: relative;
+  transition: transform 0.2s;
 }

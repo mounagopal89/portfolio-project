@@ -9,14 +9,14 @@ import {
   // Form,
   // FormControl,
   // Button,
-  // NavDropdown,
+  NavDropdown,
 } from "react-bootstrap";
 
 const Navbar1 = () => {
   return (
     <Navbar className="color-nav" variant="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Mounika Jakkani</Navbar.Brand>
+        <Navbar.Brand>Mounika Jakkani</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
@@ -26,20 +26,16 @@ const Navbar1 = () => {
             <Nav.Link as={Link} to="/About">
               About
             </Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown title="Projects" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/Weather">
+                Weather App
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Movie">
+                Movie App
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Todo App</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
-            <Nav.Link as={Link} to="/Projects">
-              Projects
-            </Nav.Link>
+            </NavDropdown>
             <Nav.Link as={Link} to="/Contact">
               Contact
             </Nav.Link>

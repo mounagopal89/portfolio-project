@@ -1,5 +1,23 @@
 .color-nav {
-  background-color: darkgreen;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 3rem;
+}
+
+#basic-navbar-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.navbar-nav a {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.scrollarrow {
+  /* display: inline-block; */
+  /* width: 100%; */
+  text-align: center;
+  margin-top: 8em;
+  cursor: pointer;
 }

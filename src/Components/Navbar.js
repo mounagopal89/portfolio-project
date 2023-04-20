@@ -16,15 +16,18 @@ const Navbar1 = () => {
   return (
     <Navbar className="color-nav" variant="light" expand="lg">
       <Container>
-        <Navbar.Brand>Mounika Jakkani</Navbar.Brand>
+        {/* <Navbar.Brand>Mounika Jakkani</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav>
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/About">
               About
+            </Nav.Link>
+            <Nav.Link as={Link} to="/Resume">
+              Resume
             </Nav.Link>
             <NavDropdown title="Projects" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/Weather">
